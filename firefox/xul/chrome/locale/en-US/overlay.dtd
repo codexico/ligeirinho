@@ -1,0 +1,8 @@
+<!ENTITY ligeirinhofirefox.label "Your localized menuitem">
+<!ENTITY ligeirinhofirefoxContext.label "Your Menuitem">
+<!ENTITY ligeirinhofirefoxContext.accesskey "Y">
+<!ENTITY ligeirinhofirefoxToolbarButton.label "Your Toolbar Button">
+<!ENTITY ligeirinhofirefoxToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY ligeirinhofirefoxSidebar.label "Your Sidebar">
+<!ENTITY ligeirinhofirefoxToolbar.name  "example">
+<!ENTITY ligeirinhofirefoxToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &ligeirinhofirefoxToolbar.name;">

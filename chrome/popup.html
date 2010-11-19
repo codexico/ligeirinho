@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Chrome Extension Buscapé</title>
+
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+        <meta name="author" content="lgtelles, mdocko, codexico" />
+        <meta name="description" content="popup de ofertas do site buscape na extensao para chrome" />
+
+        <script src="jquery-1.4.3.min.js" type="text/javascript" ></script>
+
+        <script src="json.js" type="text/javascript" ></script>
+
+        <script src="ejs_production.js" type="text/javascript" ></script>
+
+        <script src="popup.js" type="text/javascript" ></script>
+
+        <link rel="stylesheet" type="text/css" href="popup.css" />
+
+    </head>
+    <body>
+
+        <div id="container_buscape">
+
+            <div id="divPais" class="boxescuro">
+                <div id="msgInicial"></div>
+                <div class="bandeiras">
+                    <span class="bdbra"></span>
+                    <div class="escolherPais">
+                        <select id="ddlPais">
+                            <option value="BR" id="listBrasil"></option>
+                            <option value="AR" id="listArgentina"></option>
+                            <option value="CL" id="listChile"></option>
+                            <option value="CO" id="listColombia"></option>
+                            <option value="MX" id="listMexico"></option>
+                            <option value="PE" id="listPeru"></option>
+                            <option value="VE" id="listVenezuela"></option>
+                        </select>
+                        <input id="salvarPais" type=button value="" />
+                    </div>
+                </div>
+            </div>
+
+            <div id='warning'>
+            </div>
+
+            <form id="search_top" class="formsearch" action="">
+                <div class='search_again'></div>
+                <div class="search">
+                    <p class="nenhum">
+                        <input type="text" class="txtSearch" />
+                        <button type="submit" class="btnProcurar"></button>
+                        <span class="loading">
+                            <img src='ajax-loader.gif' alt="carregando..." />
+                        </span>
+                    </p>
+                </div>
+            </form>
+
+            <div id='ordenacao'>
+                <ul>
+                    <li><strong id="ordenarPor"></strong></li>
+                    <li><a class="preco" id="ordPreco"></a></li>
+                    <li><a class="loja" id="ordLoja"></a></li>
+                    <li><a class="avaliacao" id="ordAval"></a></li>
+                </ul>
+            </div>
+
+            <div id='result'>
+            </div>
+
+            <form id="search_bottom" class="formsearch" action="">
+                <div class='search_again'></div>
+                <div class="search">
+                    <p class="nenhum">
+                        <input type="text" class="txtSearch" />
+                        <button type="submit" class="btnProcurar"></button>
+                        <span class="loading">
+                            <img src='ajax-loader.gif' alt="carregando..." />
+                        </span>
+                    </p>
+                </div>
+            </form>
+
+        </div>
+
+    </body>
+</html>

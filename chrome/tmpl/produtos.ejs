@@ -1,0 +1,74 @@
+<% for (var i = 0; i < produtosJSON.numProdutos; i = i + 1) { %>
+
+<div id="<%= produtosJSON[i].product.id %>" class="product" >
+
+    <h1><%= produtosJSON[i].product.productname %></h1>
+
+    <img src="<%= produtosJSON[i].product.thumbnail.url %>"
+         width="150" height="120" onError="ligeirinhoPopup.imageError(this)" />
+
+    <h2>
+        <strong class="totalsellers">
+            <%= produtosJSON[i].product.totalsellers %>
+        </strong> <%= produtosJSON.msg.msgOfertas %>
+    </h2>
+
+    <span class="dea">
+        <% if (produtosJSON[i].product.totalsellers !== 0) { %>
+        <small><%= msg.msgDe %> <strong>
+                <%= produtosJSON[i].product.pricemin %>
+                <br /></strong> <%= msg.msgA %> <strong>
+                <%= produtosJSON[i].product.pricemax %>
+            </strong></small>
+        <% } else { %>
+        <%= msg.msgPrecoIndisponivel %>
+        <% } %>
+    </span>
+
+
+    <div class="avaliacao">
+        <p><%= msg.msgAvalUsuarios %>: </p>
+
+        <h3><%= produtosJSON[i].product.rating.useraveragerating.rating %></h3>
+
+        <ul>
+            <% for (var star=0; (star+2) <= produtosJSON[i].product.rating.useraveragerating.rating; star = star + 2 ) { %>
+            <li><img src="star_on.png" /></li>
+            <% } %>
+            <% for (star; star<10; star = star+2) { %>
+            <% if ( (produtosJSON[i].product.rating.useraveragerating.rating - star) > 1.5) { %>
+            <li><img src="star_on.png" /></li>
+            <% } else if( (produtosJSON[i].product.rating.useraveragerating.rating - star) > 0.5) { %>
+            <li><img src="star_mid.png" /></li>
+            <% } else { %>
+            <li><img src="star_off.png" /></li>
+            <% } %>
+            <% } %>
+        </ul>
+    </div>
+
+
+    <div class="specifications">
+        <% for(var x in produtosJSON[i].product.specification.item) { %>
+        <% if(produtosJSON[i].product.specification.item.hasOwnProperty(x)) { %>
+
+            <%= produtosJSON[i].product.specification.item[x].item.label %>&nbsp; : &nbsp;
+            <%= produtosJSON[i].product.specification.item[x].item.value[0] %>
+            <br />
+        <% } %>
+        <% } %>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<% } %>
+<div class="bottom_itens">&nbsp;</div>
+

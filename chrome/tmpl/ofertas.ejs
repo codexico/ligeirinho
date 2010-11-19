@@ -1,0 +1,50 @@
+<% for (var i = 0; i < offerJSON.totalresultsreturned; i = i + 1) { %>
+
+	<% 
+	if(offerJSON[i].offer.links[0].link.url === undefined){
+		offerJSON[i].offer.links[0].link.url = "";//as vezes a url vem undefined
+	}
+	%>
+
+	<div id="offer<%= i %>" class="offer" 
+	data-url="<%= offerJSON[i].offer.links[0].link.url %>" 
+	onclick="bg.openPage('<%= offerJSON[i].offer.links[0].link.url %>', 
+	'<%= offerJSON[i].offer.seller.sellername %>',
+	'<%= offerJSON[i].offer.links[0].link.url %>' )">
+
+		<div class="logo">
+			<% if (offerJSON[i].offer.seller.thumbnail != null) { %>
+				<img src="<%= offerJSON[i].offer.seller.thumbnail.url %>"/>
+			<% } else { %>
+				<%= offerJSON[i].offer.seller.sellername %>
+			<% } %>
+		</div>
+	
+		<div class="price"><%= msg.msgAVista %><br>
+			<h2>
+		 		<%= offerJSON[i].offer.price.value %>
+			</h2>
+		</div>
+	
+		<span class="dea">
+		<% if (offerJSON[i].offer.price.parcel != null) { %>
+			<div class="parcel">
+				<b><%= msg.msgEmAtePreco %></b>
+				 <%= offerJSON[i].offer.price.parcel.number %> 
+				 <%= msg.msgParcelPreco %> 
+				 <%= offerJSON[i].offer.price.parcel.value %>
+			</div>
+		<% } else { %>
+			<div class="parcel">
+				<b><%= msg.msgConfiraPreco %>!</b>
+			</div>
+		<% } %>
+		</span>
+
+		<div class="desc">
+			<%= offerJSON[i].offer.offername %>
+		</div>
+
+	</div>
+<% } %>
+<div class="bottom_itens">&nbsp;</div>

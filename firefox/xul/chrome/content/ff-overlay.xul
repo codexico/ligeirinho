@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://ligeirinhofirefox/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://ligeirinhofirefox/locale/overlay.dtd">
+<overlay id="ligeirinhofirefox-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script src="overlay.js"/>
+    <script src="ff-overlay.js"/>
+
+    <stringbundleset id="stringbundleset">
+        <stringbundle id="ligeirinhofirefox-strings" src="chrome://ligeirinhofirefox/locale/overlay.properties"/>
+    </stringbundleset>
+
+    <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="ligeirinhofirefox-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
+            label="&ligeirinhofirefoxToolbarButton.label;"
+            tooltiptext="&ligeirinhofirefoxToolbarButton.tooltip;"
+            type="menu-button"
+            popup="ligeirinho-menupop"/>
+    </toolbarpalette>
+
+    <popupset id="mainPopupSet">
+        <menupopup id="ligeirinho-menupop" position="after_start" onpopupshowing="ligeirinhofirefox.showingpopup();">
+            <vbox id="ligeirinho-menupop-vbox">
+                <hbox class="ligeirinho-search">
+                    <textbox label="search"/>
+                </hbox>
+                <separator class="separator" />
+                <hbox class="title-produtos">
+                    <label value="Produtos"/>
+                </hbox>
+            </vbox>
+        </menupopup>
+    </popupset>
+
+</overlay>

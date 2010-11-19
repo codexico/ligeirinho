@@ -1,0 +1,542 @@
+/* 
+	Document   : popup.css
+	Created on : 24/02/2010
+	Author     : Fernando Luigi Basilio - fluibasilio@gmail.com
+	Description:
+		Estilos para o popup
+
+        Last Modified on:
+            31/03/2010 - codexico
+                - Bug corrigido: divs de ofertas agora usam class="offer" para separar de
+                             class="product" que tem um listener
+            20/08/2010 - codexico
+            	- estilos para produtos sem imagem
+            
+        TODO: eliminar estilos nao utilizados em .offer
+        
+
+*/
+
+body{
+	overflow-x: hidden;
+}
+
+#container_buscape{
+	width: 355px;
+	padding-bottom: 5px;
+}
+
+/*header*/
+.header{
+	float: left;
+	width: 315px;
+	margin: 0px;
+	padding: 10px 10px 20px 10px;
+	-moz-border-radius-topleft:  5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topright:  5px;
+	-webkit-border-top-right-radius: 5px;
+	position: relative;
+	font-size: 18px;
+	font-style: italic;
+	color: #fff;
+	background: #676767 url(logo.png) no-repeat 10px 10px;
+}
+
+.header img{
+	float: left;
+	width: 49px;
+	height: 52px;
+	margin-right: 15px;
+}
+
+.header p{
+	width: 315px;
+	margin: 5px 0 0 0;
+}
+
+.header p.destaque{
+	width: 255px;
+	padding: 0 0 0 60px;
+}
+
+.header p.destaque strong{
+	font-weight: normal;
+	font-size: 40px;
+	color: #fff;
+	padding: 0 5px 0 10px;
+}
+
+.header p.erro{
+	font-size: 15px;
+}
+
+.header p.erro span{
+	font-weight: bold;
+	color: #ffcc33;
+}
+
+#result{
+	width: 335px;
+}
+
+.bottom_itens{
+	float: left;
+	width: 335px;
+	-moz-border-radius-bottomleft:  5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright:  5px;
+	-webkit-border-bottom-right-radius: 5px;
+	background-color: #555555;
+}
+
+/*search*/
+.search_again{
+	float: left;
+	width: 321px;
+	background: #676767;
+	color: #fff;
+	-moz-border-radius-topleft:  5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topright:  5px;
+	-webkit-border-top-right-radius: 5px;
+	padding: 5px 7px 10px 7px;
+	position: relative;
+	font-size: 18px;
+	font-style: italic;
+	margin-top: 5px;
+	display: none;
+}
+
+.search{
+	float: left;
+	width: 321px;
+	background: #f6dd08;
+	-moz-border-radius:  5px;
+	-webkit-border-radius: 5px;
+	padding: 5px 7px;
+	position: relative;
+	top: -5px;
+}
+
+.search p{
+	margin: 0;
+	padding: 0;
+}
+
+.search .txtSearch{
+	width: 210px;
+	border: none;
+	padding: 6px;
+	-moz-border-radius:  5px;
+	-webkit-border-radius: 5px;
+	margin-right: 5px;
+}
+
+.search button{
+	width: 81px;
+	height: 27px;
+	border: none;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+
+.btProcurarPt {
+	background: url(bt-procurar.png) no-repeat;
+}
+
+.btProcurarEn {
+	background: url(bt-procurarEn.png) no-repeat;
+}
+
+.btProcurarEs {
+	background: url(bt-procurarEs.png) no-repeat;
+}
+
+.search .loading{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 13px;
+	right: 112px;
+}
+
+/*product*/
+.product {
+	float: left;
+	position: relative;
+	background-color: #555555;
+	width: 315px;
+	margin: 0;
+	padding: 10px 10px 20px 10px;
+	cursor: pointer;
+	font-size: 13px;
+	font-family: Tahoma;
+	border-bottom: 1px solid #3e3e3e;
+}
+
+.product,
+.product a{
+	color: #CCCCCC;
+}
+
+.product img{
+	float: left;
+	margin-right: 15px;
+}
+
+.product h1{
+	color: #CCCCCC;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 20px 0;
+}
+
+.product h2{
+	font-weight: normal;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.product h2 strong{
+	font-weight: normal;
+	font-size: 38px;
+	color: #ffcc33;
+	padding-right: 5px;
+}
+
+.product .dea{
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.product small strong{
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.product .avaliacao{
+	float: left;
+	width: 315px;
+	margin-top: 10px;
+}
+
+.product .avaliacao p{
+	margin: 0;
+	padding: 0;
+}
+
+.product .avaliacao h3{
+	float: left;
+	width: 80px;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 38px;
+	color: #ffcc33;
+}
+
+.product .avaliacao ul,
+.product .avaliacao ul li,
+#ordenacao ul,
+#ordenacao ul li{
+	float: left;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.product .avaliacao ul{
+	width: 120px;
+	margin: 15px 0 0 0;
+}
+
+.product .avaliacao ul li{
+	width: 20px;
+}
+
+.product:hover{
+	background: #5e5e5e;
+}
+
+.product a{
+	text-decoration: none;
+}
+
+.product .logo{
+	float: left;
+	width: 88px;
+	height: 31px;
+	margin: 18px 10px 15px 0;
+	background: #fff;
+	padding: 5px;
+}
+
+.product .price,
+.product .parcel{
+	float: left;
+	width: 205px;
+	font-size: 11px;
+}
+
+.product .price h2{
+	font-size: 25px;
+	font-family: Tahoma;
+	font-style: normal;
+	color: #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+.product .parcel,
+.product .desc{
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.product .parcel{
+	margin: 5px 0 15px 0;
+}
+
+
+/*offer*/
+.offer {
+	float: left;
+	position: relative;
+	background-color: #555555;
+	width: 315px;
+	margin: 0;
+	padding: 10px 10px 20px 10px;
+	cursor: pointer;
+	font-size: 13px;
+	font-family: Tahoma;
+	border-bottom: 1px solid #3e3e3e;
+}
+
+.offer,
+.offer a{
+	color: #CCCCCC;
+}
+
+.offer img{
+	float: left;
+	margin-right: 15px;
+}
+
+.offer h1{
+	color: #CCCCCC;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 20px 0;
+}
+
+.offer h2{
+	float: left;
+	width: 145px;
+	font-weight: normal;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.offer h2 strong{
+	font-weight: normal;
+	font-size: 38px;
+	color: #ffcc33;
+	padding-right: 5px;
+}
+
+.offer small strong{
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.offer .avaliacao{
+	float: left;
+	width: 315px;
+	margin-top: 10px;
+}
+
+.offer .avaliacao p{
+	margin: 0;
+	padding: 0;
+}
+
+.offer .avaliacao h3{
+	float: left;
+	width: 80px;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: Georgia;
+	font-style: italic;
+	font-size: 38px;
+	color: #ffcc33;
+}
+
+.offer .avaliacao ul,
+.offer .avaliacao ul li,
+#ordenacao ul,
+#ordenacao ul li{
+	float: left;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.offer .avaliacao ul{
+	width: 120px;
+	margin: 15px 0 0 0;
+}
+
+.offer .avaliacao ul li{
+	width: 20px;
+}
+
+.offer:hover{
+	background: #5e5e5e;
+}
+
+.offer a{
+	text-decoration: none;
+}
+
+.offer .logo{
+	float: left;
+	width: 88px;
+	height: 31px;
+	margin: 18px 10px 15px 0;
+	background: #fff;
+	padding: 5px;
+}
+
+.offer .price,
+.offer .parcel{
+	float: left;
+	width: 205px;
+	font-size: 11px;
+}
+
+.offer .price h2{
+	font-size: 25px;
+	font-family: Tahoma;
+	font-style: normal;
+	color: #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+.offer .parcel,
+.offer .desc{
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.offer .parcel{
+	margin: 5px 0 15px 0;
+}
+
+/*ordenacao*/
+#ordenacao{
+	float: left;
+	width: 325px;
+	padding: 0 10px 10px 0;
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #666;
+	display: none;
+}
+
+#ordenacao ul li{
+	margin-right: 10px;
+}
+
+#ordenacao li a{
+	padding: 2px 5px 3px 15px;
+	background: url(bullet_order.png) no-repeat 5px 0;
+	cursor: pointer;
+}
+
+#ordenacao li a:hover{
+	background: #666 url(bullet_order.png) no-repeat 5px -11px;
+	color: #fff;
+}
+
+/*Bandeiras no Footer*/
+.bandeiras span{padding:0 0 0 30px;}
+.bandeiras{padding:5px 0;text-align:center;}
+.bandeiras span{
+	background-image:url(bandeiras/bandeiras.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+.bandeiras span a.txtoutro{
+    text-decoration: underline;
+	font-family: Tahoma;
+	font-size: 11px;
+	/*color: #666;*/
+}
+.bandeiras .AR{background-position:0px 0px;}
+.bandeiras .bdbol{background-position:0px 0px;}
+.bandeiras .BR{background-position:0px -50px;}
+.bandeiras .CL{background-position:0px -75px;}
+.bandeiras .CO{background-position:0px -100px;}
+.bandeiras .bdcos{background-position:0px -125px;}
+.bandeiras .bdecu{background-position:0px -150px;}
+.bandeiras .bdsal{background-position:0px -175px;}
+.bandeiras .bdesp{background-position:0px -200px;}
+.bandeiras .bdgua{background-position:0px -225px;}
+.bandeiras .bdhon{background-position:0px -250px;}
+.bandeiras .MX{background-position:0px -275px;}
+.bandeiras .bdnic{background-position:0px -300px;}
+.bandeiras .bdpan{background-position:0px -325px;}
+.bandeiras .bdpar{background-position:0px -350px;}
+.bandeiras .PE{background-position:0px -375px;}
+.bandeiras .bdpue{background-position:0px -400px;}
+.bandeiras .bdpor{background-position:0px -425px;}
+.bandeiras .bdrep{background-position:0px -450px;}
+.bandeiras .bduru{background-position:0px -475px;}
+.bandeiras .VE{background-position:0px -500px;}
+
+
+.boxamarelo{
+	float: left;
+	width: 321px;
+	background: #f6dd08;
+	-moz-border-radius:  5px;
+	-webkit-border-radius: 5px;
+	padding: 5px 7px;
+	position: relative;
+	top: -5px;
+}
+.boxescuro{
+	float: left;
+	width: 321px;
+	background: #676767;
+	-moz-border-radius:  5px;
+	-webkit-border-radius: 5px;
+	padding: 5px 7px;
+	position: relative;
+	top: -5px;
+        color: #fff;
+}
+
+
+.specifications{
+    float: left;
+}
+#search_top{
+    
+}
+#search_bottom{
+    display: none;
+}

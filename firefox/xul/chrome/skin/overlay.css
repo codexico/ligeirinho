@@ -1,0 +1,21 @@
+
+/* senao cada SO usa seu tema */
+#ligeirinho-menupop-vbox
+{
+    background: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+#ligeirinhofirefox-toolbar-button
+{
+  list-style-image: url("chrome://ligeirinhofirefox/skin/icon.png");
+}
+#ligeirinhofirefox-toolbar-button:hover
+{
+}
+[iconsize="small"] #ligeirinhofirefox-toolbar-button
+{
+}
+[iconsize="small"] #ligeirinhofirefox-toolbar-button:hover
+{
+}

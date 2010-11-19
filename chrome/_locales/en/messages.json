@@ -1,0 +1,166 @@
+﻿{
+	"extName": {
+		"message": "Ligeirinho - Chrome Extension",
+		"description": "Extension's name."
+	},
+	"extDescription": {
+		"message": "Compare preços em 7 países com apenas um clique!",
+		"description": "Extension's description."
+	},
+	"defaultTitle": {
+		"message": "Ligeirinho",
+		"description": "Extension's Title."
+	},
+	"msgNenhumProdEncontrado1": {
+		"message": "No product found",
+		"description": ""
+	},
+	"msgComTexto": {
+		"message": "with the text",
+		"description": ""
+	},
+	"msgNenhumProdEncontrado3": {
+		"message": "Try again",
+		"description": ""
+	},
+	"msgMuitosProdEncontrado1": {
+		"message": "Too many products found",
+		"description": ""
+	},
+	"msgMuitosProdEncontrado3": {
+		"message": "Try again with more specific words.",
+		"description": ""
+	},
+	"msgSelTxt1": {
+		"message": "Select a text on a page",
+		"description": ""
+	},
+	"msgSelTxt2": {
+		"message": "or use the searchbox below",
+		"description": ""
+	},
+	"msgOfertasEncontradas": {
+		"message": "offers found",
+		"description": ""
+	},
+	"msgEmAtePreco": {
+		"message": "Up to",
+		"description": ""
+	},
+	"msgParcelPreco": {
+		"message": "x installments",
+		"description": ""
+	},
+	"msgConfiraPreco": {
+		"message": "Check out the site.",
+		"description": ""
+	},
+	"msgProdEncontrados": {
+		"message": "products found",
+		"description": ""
+	},
+	"msgProdListados": {
+		"message": "produtos listed",
+		"description": ""
+	},
+	"msgRestBusca": {
+		"message": "Try narrowing your search for better results.",
+		"description": ""
+	},
+	"msgOfertas": {
+		"message": "Offers",
+		"description": ""
+	},
+	"msgDe": {
+		"message": "From",
+		"description": ""
+	},
+	"msgA": {
+		"message": "to",
+		"description": ""
+	},
+	"msgAvalUsuarios": {
+		"message": "Users Rating",
+		"description": ""
+	},
+	"msgAVista": {
+		"message": "One-time payment of",
+		"description": ""
+	},
+	"msgBusqueNovamente": {
+		"message": "Search Again",
+		"description": ""
+	},
+	"msgOrdenarPor": {
+		"message": "Order by",
+		"description": ""
+	},
+	"msgOrdPreco": {
+		"message": "Price",
+		"description": ""
+	},
+	"msgOrdLoja": {
+		"message": "Shop",
+		"description": ""
+	},
+	"msgOrdAval": {
+		"message": "Rating",
+		"description": ""
+	},
+	"msgProcurar": {
+		"message": "Search",
+		"description": ""
+	},
+	"msgBtProcurar": {
+		"message": "btProcurarEn",
+		"description": ""
+	},
+	"msgSelecionarPais1vez": {
+		"message": "Hey! We just saw that we don't know where are you! Without that we can't choose the best offers to show. Can you tell us in which country are you?",
+		"description": ""
+	},
+	"msgObrigado": {
+		"message": "Thanks!",
+		"description": ""
+	},
+	"msgSalvarPais": {
+		"message": "Save",
+		"description": ""
+	},
+	"msgEscolherPais": {
+		"message": "Another country",
+		"description": ""
+	},
+	"msgBrasil": {
+		"message": "Brazil",
+		"description": ""
+	},
+	"msgArgentina": {
+		"message": "Argentina",
+		"description": ""
+	},
+	"msgChile": {
+		"message": "Chile",
+		"description": ""
+	},
+	"msgColombia": {
+		"message": "Colombia",
+		"description": ""
+	},
+	"msgMexico": {
+		"message": "Mexico",
+		"description": ""
+	},
+	"msgPeru": {
+		"message": "Peru",
+		"description": ""
+	},
+	"msgVenezuela": {
+		"message": "Venezuela",
+		"description": ""
+	},
+	"msgPrecoIndisponivel": {
+		"message": "Price unavailable.",
+		"description": ""		
+	}
+}

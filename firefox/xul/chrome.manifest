@@ -1,0 +1,7 @@
+content   ligeirinhofirefox                 chrome/content/
+skin      ligeirinhofirefox   classic/1.0   chrome/skin/
+locale    ligeirinhofirefox   en-US         chrome/locale/en-US/
+
+
+overlay   chrome://browser/content/browser.xul   chrome://ligeirinhofirefox/content/ff-overlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://ligeirinhofirefox/skin/overlay.css
