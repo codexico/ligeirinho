@@ -12,6 +12,8 @@ Quanto mais específico for o texto melhor será o resultado da busca.
 
 Changelog:
 ==========
+1.3.4 - codexico
+        Removing information to open source project.
 1.3.3 - codexico
         Mostra dados dos produtos.
         Campo para busca acima e abaixo da lista.
