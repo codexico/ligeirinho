@@ -34,6 +34,8 @@
                 - algumas vars e funcs mudaram de nome para usar as mudancas do popup.js
         09/11/2010 - codexico
                 - funcao debug e constantes para facilitar
+        14/05/2014 - codexico
+            - Removendo configs para liberar repositorio
 
  */
 
