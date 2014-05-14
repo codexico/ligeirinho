@@ -1,2 +1,3 @@
 var AFFILIATE_ID = 00000000;
+var APPLICATION_ID = 'appid';
 var LOG_URL = 'http://example.com';

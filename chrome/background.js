@@ -40,7 +40,6 @@
 var PRODUCTION = true;
 var DEBUG = false;
 
-var APPLICATION_ID = '***REMOVED***';
 var URL_BWS = 'http://bws.buscape.com/service/';
 
 
