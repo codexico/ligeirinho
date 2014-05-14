@@ -34,7 +34,7 @@
                 - algumas vars e funcs mudaram de nome para usar as mudancas do popup.js
         09/11/2010 - codexico
                 - funcao debug e constantes para facilitar
-			
+
  */
 
 var PRODUCTION = true;
@@ -65,11 +65,11 @@ function openPage(url1, store, logo) {
     }); // Cria uma nova tab não selecionada para que a extensão não saia de foco.
     $.ajax({
         type: "GET",
-        url : '***REMOVED***',
+        url : LOG_URL,
         data: ({
             'term' : txtG,
             'store' : store
-        }),		
+        }),
         success: function() {
             debug('Search logged');
         },
@@ -89,7 +89,7 @@ function findProductList(txt, numResults){
     txtG = txt;
     var paisSelecionado = localStorage["pais"];
     var caminho = URL_BWS + 'findProductList/' + APPLICATION_ID;
-	
+
     if(paisSelecionado != null) {
         caminho += '/' + paisSelecionado + '/';
         $('#divPais').html(caminho);
@@ -164,7 +164,7 @@ function findOfferList(productId, ordem) {
         caminho += '/' + paisSelecionado + '/';
         $('#divPais').html(caminho);
     }
-	
+
     $.ajax({
         type: "GET",
         url : caminho,
@@ -197,7 +197,7 @@ function findOfferListByCategory(categoryId, txt, ordem){
         caminho += '/' + paisSelecionado + '/';
         $('#divPais').html(caminho);
     }
-	
+
     $.ajax({
         type: "GET",
         url : caminho,
@@ -288,7 +288,7 @@ function bgGetPopup(){
 function encaminha(textoSelecionado){
     debug('encaminha('+textoSelecionado+')');
     v = bgGetPopup();
-    
+
     if ((textoSelecionado != undefined) && (textoSelecionado != '') ) {
         v.ligeirinhoPopup.setTxtProduto(textoSelecionado);
         findProductList(textoSelecionado, 1);
@@ -302,7 +302,7 @@ function encaminha(textoSelecionado){
  * Inicia o background, chamada pelo popup
  */
 function bgInit(){
-    encaminha(txtGlobal);   
+    encaminha(txtGlobal);
 }
 
 /**
