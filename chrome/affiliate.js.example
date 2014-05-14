@@ -1,0 +1,2 @@
+var AFFILIATE_ID = 00000000;
+var LOG_URL = 'http://example.com';
